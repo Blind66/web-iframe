@@ -1,5 +1,3 @@
-
-<div class="rn_PageContent rn_browser rn_Container">
 <html lang="es"><head>
   
     <meta charset="UTF-8">
@@ -1146,5 +1144,3 @@ getDivButtons:function(a){for(var c=[],d=0;d<a.length;d++)"DIV"===a[d].nodeName&
 tv_plan_cost:document.getElementsByClassName("dtv-precio-cinta")[0].textContent,tv_plan_products:JSON.stringify(b.getItemProducts(a.target.children[0].children[0].children))}}catch(c){}},getItemProducts:function(a){for(var c=[],d=0;d<a.length;d++)try{c.push({tv_plan_product_name:b.getCleanedString(a[d].children[0].children[1].children[0].textContent),tv_plan_product_detail:b.getCleanedString(a[d].children[0].children[1].children[1].textContent),tv_plan_product_price:b.getPrice(b.getCleanedString(a[d].children[1].children[0].textContent))})}catch(e){console.log("Possible product structure mismatch: "+
 e)}return c},getPrice:function(a){return a.split(" ").join("").split("$")[1]},dataLayerPush:function(a){try{a.detail.tv_plan_name=document.getElementsByClassName("dtv-titulo-producto-cinta")[0].textContent;try{dataLayer.push(a),console.clear(),console.log(a)}catch(c){console.log("Unsupported browser: "+c)}}catch(c){}},getCleanedString:function(a){return a=a.replace(/^\s+|\s+$/g,"").trim()}};0<=document.location.href.indexOf("tienda/directvar")&&b.init()})();</script><script type="text/javascript" id="">(function(){var c={init:function(){this.dataLayerPush("performance_timing",{page_load_time:Number(((performance.timing.loadEventEnd-performance.timing.navigationStart)/1E3).toFixed(1)),page_render_time:Number(((performance.timing.domComplete-performance.timing.domLoading)/1E3).toFixed(1)),page_to_dom_complete:Number(((performance.timing.domComplete-performance.timing.responseStart)/1E3).toFixed(1)),time_to_dom_interactive:Number(((performance.timing.domInteractive-performance.timing.responseStart)/
 1E3).toFixed(1))})},dataLayerPush:function(a,b){a={event:a,details:b};dataLayer.push(a)}};c.init()})();</script></body><iframe id="__JSBridgeIframe_1.0__" style="display: none;"></iframe><iframe id="__JSBridgeIframe_SetResult_1.0__" style="display: none;"></iframe><iframe id="__JSBridgeIframe__" style="display: none;"></iframe><iframe id="__JSBridgeIframe_SetResult__" style="display: none;"></iframe></html>
-
-</div >
